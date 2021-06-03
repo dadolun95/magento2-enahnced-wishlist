@@ -1,7 +1,7 @@
 # Dadolun_EnhancedWishlist
 
 ## Features
-This module adds a flag already added on wishlist items on listings and product page
+This module flags already added on wishlist items on listings and product page
 
 ## Installation
 You can install this module adding it on app/code folder or with composer.
