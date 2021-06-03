@@ -30,7 +30,7 @@ php bin/magento module:enable Dadolun_EnhancedWishlist
 php bin/magento setup:upgrade
 ```
 ##### CONFIGURATION
-You can update default configs on Stores > Configurations > Customer > Wishlist > Enhanced Wishlist" section.
+You can update default configs on "Stores > Configurations > Customer > Wishlist > Enhanced Wishlist" section.
 
 ## Contributing
 Contributions are very welcome. In order to contribute, please fork this repository and submit a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
