@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Magento 2
+ * @package     Dadolun_EnhancedWishlist
+ * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="enhanced-wishlist-initializer" template="Dadolun_EnhancedWishlist::html/js/enhanced-wishlist-initializer.phtml">
+                <arguments>
+                    <argument name="enhancedWishlistConfiguration" xsi:type="object">Dadolun\EnhancedWishlist\ViewModel\WishlistConfiguration</argument>
+                    <argument name="enhancedWishlistType" xsi:type="string">catalog_product_compare_index</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

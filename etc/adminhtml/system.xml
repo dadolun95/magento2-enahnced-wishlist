@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Magento 2
+ * @package     Dadolun_EnhancedWishlist
+ * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="wishlist" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Wish List</label>
+            <tab>customer</tab>
+            <resource>Magento_Wishlist::config_wishlist</resource>
+            <group id="enhanced_wishlist" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Enhanced Wishlist</label>
+                <field id="status" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="catalog_category_view" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1"
+                       showInStore="1" canRestore="1">
+                    <label>Category Listing CSS to wishlist item selector</label>
+                </field>
+                <field id="catalog_product_view" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1"
+                       showInStore="1" canRestore="1">
+                    <label>Product Page CSS to wishlist item selector</label>
+                </field>
+                <field id="catalog_product_compare_index" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1"
+                       showInStore="1" canRestore="1">
+                    <label>Compare Listing CSS to wishlist item selector</label>
+                </field>
+                <field id="catalogsearch_result_index" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1"
+                       showInStore="1" canRestore="1">
+                    <label>Search Result Listing CSS to wishlist item selector</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

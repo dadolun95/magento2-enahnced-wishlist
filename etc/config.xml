@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Magento 2
+ * @package     Dadolun_EnhancedWishlist
+ * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <wishlist>
+            <enhanced_wishlist>
+                <status>1</status>
+                <catalog_category_view>.product-item .product-item-info .towishlist</catalog_category_view>
+                <catalog_product_view>.product-info-main .towishlist</catalog_product_view>
+                <catalog_product_compare_index>.product-info-main .towishlist</catalog_product_compare_index>
+                <catalogsearch_result_index>.product-item .product-item-info .towishlist</catalogsearch_result_index>
+            </enhanced_wishlist>
+        </wishlist>
+    </default>
+</config>

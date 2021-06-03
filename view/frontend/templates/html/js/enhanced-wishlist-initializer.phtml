@@ -1,0 +1,25 @@
+<?php
+/**
+ * @category    Magento 2
+ * @package     Dadolun_EnhancedWishlist
+ * @copyright   Copyright (c) 2020 Dadolun (https://github.com/dadolun95)
+ */
+
+/**
+ * @var \Dadolun\EnhancedWishlist\ViewModel\WishlistConfiguration $configuration
+ */
+$configuration = $block->getData('enhancedWishlistConfiguration');
+/**
+ * @var string $sectionType
+ */
+$sectionType = $block->getData('enhancedWishlistType');
+?>
+<?php if ($configuration->isEnhancedWishlistEnabled()): ?>
+<script type="text/x-magento-init">
+{
+    "<?= $configuration->getSectionConfiguration($sectionType); ?>": {
+        "DadolunWishlistHeartFiller": {}
+    }
+}
+</script>
+<?php endif; ?>

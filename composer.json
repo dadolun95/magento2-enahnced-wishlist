@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "Dadolun/magento2-enhanced-wishlist",
+  "description": "Magento2 Enhanced Wishlist",
+  "type": "magento2-module",
+  "keywords": [
+    "php",
+    "magento",
+    "magento2",
+    "wishlist",
+    "enhanced"
+  ],
+  "require": {
+    "magento/framework": "^103.0",
+    "magento/module-wishlist": "*"
+  },
+  "license": [
+    "OSL-3.0"
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Dadolun\\EnhancedWishlist\\": ""
+    }
+  }
+}
